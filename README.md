@@ -1,9 +1,25 @@
 # node-couchbase-compat-server
 This is a NODE.JS Server Offering mysql, redis Compatible Protocols for Couchbase so you can use Couchbase as backend for all Applications.
 
+
+## Why?
+The Idea Behind this was and maybe is to translate all kind of Protocols to Couchbase N1QL Querys. This allows then to use Couchbase as a Backend without Modification to the existing Application.
+
+While i did not focus on this effort so much 2 companys did create mysql drivers that translate to diffrent N1QL schemas
+
+I think it is at present the most easy part to modify Application DB Layers. The Idea of a Driver that does the Translation is maybe not as performant as a translation server.
+
+Pro: Translation Server
+- Can Still Speak the Original Protocol and can Mirror into 2 diffrent databases to migrate data smooth
+- is able to Offer diffrent ApiÄs Like for example done With Oracle Graal which is able to Compile code to get used inside Oracle DB
+- Can Shard diffrent Databases.
+
+Pro: Adapter
+- No Additional Server Costs.
+- 
+
+
 # a  MYSQL, REDIS, COUCHBASE, Compatible  server using Couchbase as backend.
-
-
 
 Reference of joins as puts and insert and delet by key is simply
 http://www.sitepoint.com/understanding-sql-joins-mysql-database/
